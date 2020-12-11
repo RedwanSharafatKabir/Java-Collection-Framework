@@ -37,10 +37,12 @@ public class Tweet_with_ArrayList {
         return text+" - by "+name+" on "+dateTime.toString();
     }
 }
+
 interface Twitter {
     public void addTweet(Tweet_with_ArrayList tweet);
     public void printAllTweets();
 }
+
 class TwitterImpl implements Twitter{
     private List<Tweet_with_ArrayList> list = new ArrayList<>();
     
@@ -55,6 +57,7 @@ class TwitterImpl implements Twitter{
             System.out.println(tweet);
         }
     }
+
     public static void main(String args []){
         Twitter twitter = new TwitterImpl();
         Tweet_with_ArrayList tweet = new Tweet_with_ArrayList("Welcome to my university"+" Daffodil International University. ","Daffodil Corporation.");
