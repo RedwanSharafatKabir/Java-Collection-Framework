@@ -2,7 +2,7 @@ package Collection;
 
 import java.util.LinkedList;
 
-public class LinkedList_Dubly {
+public class LinkedList_Doubly {
     public static void main(String [] args){
         LinkedList<String> countryNames = new java.util.LinkedList<String>();
 
@@ -36,8 +36,13 @@ public class LinkedList_Dubly {
         System.out.println("Last element: " + countryNames.getLast()); // print last element
         System.out.println("Value of index 1: " + countryNames.get(1)); // print value of specific index
 
+        // checking if linkedlist is empty
+        System.out.println(countryNames.isEmpty());
+
         // clear the linkedlist
         countryNames.clear();
         System.out.println("Cleared linkedlist: " + countryNames);
+        // checking if linkedlist is empty
+        System.out.println(countryNames.isEmpty());
     }
 }
